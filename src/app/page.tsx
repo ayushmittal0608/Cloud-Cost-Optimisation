@@ -4,7 +4,7 @@ import { FloatingNav } from "../components/ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import { HeroSectionOne } from "./home";
 import { ThreeDCardDemo } from "./explore";
-import ContactUs from "./contact";
+import ContactUs from "../components/ui/contact";
 
 
 export default function FloatingNavDemo() {
