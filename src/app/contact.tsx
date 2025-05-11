@@ -9,42 +9,28 @@ export default function ContactUs() {
         {/* Left side info */}
         <div className="relative text-white md:w-1/2 p-10 flex flex-col justify-center overflow-hidden">
   {/* Background Map */}
-  <iframe
-    title="Google Map"
-    className="absolute inset-0 w-full h-full object-cover pointer-events-none"
-    src="https://www.google.com/maps/embed/v1/place?q=maruti%20suzuki%20india%20limited%2C%20sector-18%2C%20gurgaon%2C%20haryana%2C%20india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
+  {/* Background Map */}
+            <iframe
+              title="Google Map"
+              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+              src="https://www.google.com/maps/embed/v1/place?q=maruti%20suzuki%20india%20limited%2C%20sector-18%2C%20gurgaon%2C%20haryana%2C%20india&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
 
-  ></iframe>
-   <div className="absolute inset-0 bg-gradient-to-r from-white/100 via-white/70 to-transparent z-0" />
+   <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-white/110 to-transparent z-0" ></div>
 
   {/* Overlay Content */}
-  <div className="relative z-10 text-black ">
-    <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
-    <h3 className="mb-6 text-md">
-      Get In Touch!
-    </h3>
-    <div className="space-y-4 text-sm">
-      <div>
-        <p className="font-semibold">Email</p>
-        <p>hello@yourcompany.com</p>
-      </div>
-      <div>
-        <p className="font-semibold">Phone</p>
-        <p>+1 (555) 123-4567</p>
-      </div>
-      <div>
-        <p className="font-semibold">Address</p>
-        <p>123 Main Street, Suite 500<br />New York, NY 10001</p>
-      </div>
-    </div>
-  </div>
+  
 </div>
 
         {/* Right side form */}
         <div className="md:w-1/2 p-10 bg-white">
+          <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
+          <h3 className="mb-6 text-md">
+            Get In Touch!
+          </h3>
           <form className="space-y-6">
             <div>
               <label className="block mb-1 text-sm font-medium">Name</label>

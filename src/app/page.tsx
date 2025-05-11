@@ -8,7 +8,7 @@ import ContactUs from "./contact";
 
 
 export default function FloatingNavDemo() {
-  const [activeTab, setActiveTab] = useState("home");
+  const [, setActiveTab] = useState("home");
 
   const navItems = [
     {

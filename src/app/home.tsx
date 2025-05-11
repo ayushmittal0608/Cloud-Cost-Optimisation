@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { motion } from "motion/react";
-import cost from "./cost.png"
+import { motion } from "framer-motion"; // Corrected import for motion library
+import cost from "./cost.png";
 
 export function HeroSectionOne() {
   return (
@@ -37,29 +37,19 @@ export function HeroSectionOne() {
             ))}
         </h1>
         <motion.p
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{
             duration: 0.3,
             delay: 0.8,
           }}
           className="relative z-10 mx-auto max-w-xl py-4 text-center text-lg font-normal text-neutral-600 dark:text-neutral-400"
         >
-          Optimize your cloud costs effortlessly
-           with cloud optimisation tools—cut expenses, not performance,
-            and scale smarter than ever before.
+          Optimize your cloud costs effortlessly with cloud optimisation tools—cut expenses, not performance, and scale smarter than ever before.
         </motion.p>
         <motion.div
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{
             duration: 0.3,
             delay: 1,
@@ -74,14 +64,8 @@ export function HeroSectionOne() {
           </button>
         </motion.div>
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 10,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{
             duration: 0.3,
             delay: 1.2,
@@ -89,21 +73,22 @@ export function HeroSectionOne() {
           className="relative z-10 mt-20 rounded-3xl border border-neutral-200 bg-neutral-100 p-4 shadow-md dark:border-neutral-800 dark:bg-neutral-900"
         >
           <div className="w-full overflow-hidden rounded-xl px-6 py-6 border border-gray-300 dark:border-gray-700">
-            <h1 className="relative z-10 mx-auto max-w-4xl text-2xl font-bold text-cyan-950 md:text-2xl lg:text-5xl dark:text-slate-300">Why This Cost Optimisation Website?</h1>
+            <h1 className="relative z-10 mx-auto max-w-4xl text-2xl font-bold text-cyan-950 md:text-2xl lg:text-5xl dark:text-slate-300">
+              Why This Cost Optimisation Website?
+            </h1>
             <p className="relative z-10 mx-auto py-4 text-lg font-normal text-neutral-600 dark:text-neutral-400">
-            As businesses scale on cloud platforms like AWS, Azure, or GCP, they often face 
-            unpredictable costs, underutilized resources, and overspending on 
-            infrastructure they don't need. This website provides:</p>
+              As businesses scale on cloud platforms like AWS, Azure, or GCP, they often face unpredictable costs, underutilized resources, and overspending on infrastructure they don&apos;t need. This website provides:
+            </p>
             <div>
-               <Image src={cost} alt="Cost Image" width={1300} height={300} />
+              <Image src={cost} alt="Cost Image" width={1300} height={300} />
             </div>
             <ul className="relative z-10 mx-auto py-4 text-lg font-normal text-neutral-600 dark:text-neutral-400">
-                <li>  - AI-powered analytics to detect cost leaks and inefficiencies.</li>
-                <li>  - Automated recommendations to rightsize instances, shut down idle services, and choose better pricing plans.</li>
-                <li>  - Real-time dashboards that give engineering and finance teams full visibility into cloud usage and savings opportunities.</li>
-                <li>  - Seamless integration with existing cloud accounts for instant insights—no complex setup needed.</li>
+              <li>- AI-powered analytics to detect cost leaks and inefficiencies.</li>
+              <li>- Automated recommendations to rightsize instances, shut down idle services, and choose better pricing plans.</li>
+              <li>- Real-time dashboards that give engineering and finance teams full visibility into cloud usage and savings opportunities.</li>
+              <li>- Seamless integration with existing cloud accounts for instant insights—no complex setup needed.</li>
             </ul>
-        </div>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card";
 
@@ -44,7 +44,7 @@ export function ThreeDCardDemo() {
               {card.description}
             </CardItem>
             <CardItem translateZ="100" className="w-full mt-4">
-              <img
+              <Image
                 src={card.image}
                 height="1000"
                 width="1000"
